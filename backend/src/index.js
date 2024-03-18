@@ -49,7 +49,7 @@ app.listen(PORT, async () => {
     try {
         const MONGO_URL = process.env.MONGOOSE_CONNECTION;
         await mongoose.connect(MONGO_URL);     
-        console.log(`Conexão estabelecida com sucesso`);
+        console.log(`Conexão bem estabelecida com sucesso`);
     } catch (error) {
         console.error('Erro ao iniciar o servidor: ', error);
     }
