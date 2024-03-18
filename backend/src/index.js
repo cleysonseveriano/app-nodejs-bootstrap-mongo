@@ -43,7 +43,7 @@ app.put('/:id', async (req,res) => {
     return res.send(produto);
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, async () => {
     try {
